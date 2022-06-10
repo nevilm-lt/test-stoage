@@ -16,10 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checking storage
-        run: df -h
-      - name: Downloading big file
+      - name: Failing the build
         run: |
-          docker pull localstack/localstack:latest
-          docker pull elasticsearch:8.2.2
-          
+          exit 1
