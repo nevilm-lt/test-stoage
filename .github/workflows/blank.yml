@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Failing the build
+      - name: TAS Testing
         run: |
           exit 1
+      - name: Build Stage
+        run : |
+          echo "Building Application"
